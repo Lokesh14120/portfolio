@@ -9,6 +9,7 @@ import {React, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ErrorPage from './pages/ErrorPage';
+import SkillsPage from './pages/SkillsPage';
 
 function App() {
     
@@ -37,7 +38,7 @@ function App() {
                 {/* <Route path='/AboutPage' element={<AboutPage />}/> */}
                 {/* <Route path='/ContactPage' element={<ContactPage />}/> */}
                 {/* <Route path='/ProjectPage' element={<ProjectPage />}/> */}
-                {/* <Route path='/SkillsPage' element={<SkillsPage />}/> */}
+                <Route path='/SkillsPage' element={<SkillsPage/>}/>
                 <Route path='*' element={<ErrorPage/>}/>
             </Routes>
             <Footer/>

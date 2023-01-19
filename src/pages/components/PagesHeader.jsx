@@ -18,12 +18,12 @@ const PagesHeader = () => {
         switch (currentPathName) {
             case '/AboutPage':
                 setHeader(header = 'About')
-                setDescription(description = 'My name is Michael and I am an aspiring full stack web developer. I have always had a passion for technology and the way it can change the world. I am excited to learn and grow as a developer and to be able to use my skills to create innovative and user-friendly websites and applications.')
+                setDescription(description = 'Welcome to my portfolio! I am a highly motivated and dedicated individual with a passion for both competitive programming and web development. I have experience in the MERN stack (MongoDB, Express, React, Node.js). I thrive in fast-paced and challenging environments, constantly seeking to improve my skills and knowledge. My ultimate goal is to use my skills to help build innovative and user-friendly web applications that make a real impact.')
                 setButton(button = <a href="https://drive.google.com/file/d/1qDc4aZWqO_u9X7PgWOWeWgHTD2ITgQD9/view?usp=share_link" target="_blank"><button className='text-xs bg-black px-4 py-1 text-white border border-1 border-black  hover:scale-110 duration-200 dark:bg-white dark:border-white dark:text-black md:text-lg md:px-8 md:py-2'>View Resume</button></a>)
                 break;
             case '/SkillsPage':
                 setHeader(header = 'Skills')
-                setDescription(description = 'This are the tech stacks I used, since I started coding and building real world projects. HTML, CSS, JavaScript, and PHP for Web Development. C# for Windows Form Application. Java for some console project since this is my first programming language that I learnt. Im also using some Frameworks and Libraries to speed-up of my development and also other tools that will help me to achieve my desired project.')
+                setDescription(description = '')
                 break;
             case '/ProjectPage':
                 setHeader(header = 'Projects')
@@ -45,7 +45,7 @@ const PagesHeader = () => {
             <div className="w-11/12 mx-auto bg-gray-300 dark:bg-[#272829]">
 
                 <div className="w-11/12 mx-auto  flex flex-col py-4 gap-5">
-                    <h1 className="pages-header font-bold text-4xl md:text-8xl  dark:text-white">{header}</h1>
+                    <h1 className="pages-header font-bold text-4xl md:text-8xl dark:text-white">{header}</h1>
 
                     <div className="inline">
                         <p className="dark:text-white text-sm md:text-lg inline">{description}</p>
