@@ -18,7 +18,7 @@ const Database = (props) => {
                     {dataBase.map((database) => (
                         <div key={database.id} className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 hover:-translate-y-3 duration-300 drop-shadow-lg">
                             <a href={database.link} target="_blank">
-                                <div className="flex flex-row items-center w-full bg-gray-300 dark:bg-[#272829] py-2">
+                                <div className="flex rounded-xl flex-row items-center w-full bg-gray-300 dark:bg-[#272829] py-2">
                                     <div className='flex justify-center w-2/4'>
                                         <img src={database.img} alt="programing-language" className='h-16 p-1 rounded-full' />
                                     </div>

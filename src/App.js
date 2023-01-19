@@ -10,6 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ErrorPage from './pages/ErrorPage';
 import SkillsPage from './pages/SkillsPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
     
@@ -35,7 +36,7 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route exact path='/' element={<HomePage />}/>
-                {/* <Route path='/AboutPage' element={<AboutPage />}/> */}
+                <Route path='/AboutPage' element={<AboutPage/>}/>
                 {/* <Route path='/ContactPage' element={<ContactPage />}/> */}
                 {/* <Route path='/ProjectPage' element={<ProjectPage />}/> */}
                 <Route path='/SkillsPage' element={<SkillsPage/>}/>

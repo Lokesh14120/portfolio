@@ -18,8 +18,8 @@ const PagesHeader = () => {
         switch (currentPathName) {
             case '/AboutPage':
                 setHeader(header = 'About')
-                setDescription(description = 'Welcome to my portfolio! I am a highly motivated and dedicated individual with a passion for both competitive programming and web development. I have experience in the MERN stack (MongoDB, Express, React, Node.js). I thrive in fast-paced and challenging environments, constantly seeking to improve my skills and knowledge. My ultimate goal is to use my skills to help build innovative and user-friendly web applications that make a real impact.')
-                setButton(button = <a href="https://drive.google.com/file/d/1qDc4aZWqO_u9X7PgWOWeWgHTD2ITgQD9/view?usp=share_link" target="_blank"><button className='text-xs bg-black px-4 py-1 text-white border border-1 border-black  hover:scale-110 duration-200 dark:bg-white dark:border-white dark:text-black md:text-lg md:px-8 md:py-2'>View Resume</button></a>)
+                setDescription(description = 'I am a pre-final year student at Rajiv Gandhi Institute of Petroleum Technology, studying Computer Science and Engineering. I am a competitive programmer with a strong interest in problem-solving. I have a good reputation in competitive coding platforms such as Codeforces and Codechef, where I am rated 3-star and 1737 respectively. I have a strong hold on both frontend and backend development and I am always looking for ways to improve my skills and take on new challenges. I am excited to use my skills and knowledge to create innovative and user-friendly applications that make a real impact')
+                setButton(button = <a href="" target="_blank"><button className='text-xs bg-black px-4 py-1 text-white border border-1 border-black  hover:scale-110 duration-200 dark:bg-white dark:border-white dark:text-black md:text-lg md:px-8 md:py-2'>View Resume</button></a>)
                 break;
             case '/SkillsPage':
                 setHeader(header = 'Skills')
@@ -42,9 +42,9 @@ const PagesHeader = () => {
 
     return (
         <>
-            <div className="w-11/12 mx-auto bg-gray-300 dark:bg-[#272829]">
+            <div className="w-11/12 mx-auto rounded-xl bg-gray-300 dark:bg-[#272829]">
 
-                <div className="w-11/12 mx-auto  flex flex-col py-4 gap-5">
+                <div className="w-11/12 mx-auto rounded-xl flex flex-col py-4 gap-5">
                     <h1 className="pages-header font-bold text-4xl md:text-8xl dark:text-white">{header}</h1>
 
                     <div className="inline">
